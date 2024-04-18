@@ -32,7 +32,7 @@
 --|							 an(3:0)    --> seven-segment display anode active-low enable (AN3 ... AN0)
 --|							 seg(6:0)	--> seven-segment display cathodes (CG ... CA.  DP unused)
 --|
---| DOCUMENTATION : None
+--| DOCUMENTATION : C3C Morales helped me understand and derive the concurrent statements for the advanced func.
 --|
 --+----------------------------------------------------------------------------
 --|
