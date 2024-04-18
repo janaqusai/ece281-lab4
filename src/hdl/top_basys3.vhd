@@ -146,6 +146,7 @@ component TDM4 is
 	constant k_IO_WIDTH : natural := 4;
 	
 	signal f_data : std_logic_vector(k_io_width - 1 downto 0);
+	signal w_reset_tdm : std_logic := '0';
 
 
 begin
@@ -185,7 +186,7 @@ sevenSeg_inst : sevenSegDecoder
 uut_inst : TDM4 
 	generic map ( k_WIDTH => 4 )
 	port map ( i_clk   => w_clk2,
-		       i_reset => w_reset,
+		       i_reset => w_reset_tdm,
 		       i_D3    => w_tens,
 		       i_D2    => w_ones,
 		       i_D1    => "0000",
